@@ -3,17 +3,37 @@
   <head>
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header class="header">
     <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">Menu</label>
         <ul class="header-nav nav-links">
            <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery<a></li>
-<li><a href="#">Nav 2</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+      <li>Recent Posts</li>
+      
+        <li><a href="/2021/02/05/title-of-third-post.html">This is the title of the third post</a></li>
+      
+        <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the second post</a></li>
+      
+        <li><a href="/2016/11/03/title-of-post.html">This is the title of the first post</a></li>
+      
+    </ul>
+  </li>
 <li><a href="#">Nav 3</a></li>
+<li><a href="/2021/02/05/title-of-third-post.html">Newest Post</a></li>
         </ul>
     </nav>
     <a href="/" class="header-logo">
@@ -30,13 +50,19 @@
       <h1>CODE DANGEROURSLY</h1>
       <ul class="social-list">
         <li>
-          <a href="https://example.com/" class="social-link">Fb</a>
+          <a href="https://facebook.com/learnenough" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Tw</a>
+          <a href="https://twitter.com/learnenough" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Gh</a>
+          <a href="https://github.com/learnenough" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -75,6 +101,30 @@
   </div>
 
   <div class="home-section">
+    <h4>Most recent post</h4>
+    <div class="blog-posts">
+      <header class="post-header">
+        <h2>
+          <a href="/2021/02/05/title-of-third-post.html">
+          This is the title of the third post</a>
+        </h2>
+        <div class="post-byline">
+          <img src="https://s.gravatar.com/avatar/2c9878c892871182659a82afa2ad49d9?s=80">
+          <a href="https://twitter.com/mhartl"
+          class="social-link">Tw</a>
+          by: Christian Balbach
+          <span> - February 05, 2021</span>
+        </div>
+      </header>
+      <div class="posts-image"
+      style="background-image:url(/images/shark.jpg)"></div>
+      <p>This is the changed second post.</p>
+
+
+    </div>
+  </div>
+
+  <div class="home-section">
     <h2>THE FOUNDERS</h2>
     <p>
       Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee
@@ -88,7 +138,7 @@
         <img src="https://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="https://twitter.com/mhartl" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -112,7 +162,7 @@
         <img src="https://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -127,7 +177,7 @@
         <img src="https://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          Tw
+          <i class="fab fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -146,9 +196,22 @@
     <a href="/" class="footer-logo"><img src="/images/logo.png" alt="Learn Enough"></a>
     <ul class="footer-nav nav-links">
         <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery<a></li>
-<li><a href="#">Nav 2</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+      <li>Recent Posts</li>
+      
+        <li><a href="/2021/02/05/title-of-third-post.html">This is the title of the third post</a></li>
+      
+        <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the second post</a></li>
+      
+        <li><a href="/2016/11/03/title-of-post.html">This is the title of the first post</a></li>
+      
+    </ul>
+  </li>
 <li><a href="#">Nav 3</a></li>
+<li><a href="/2021/02/05/title-of-third-post.html">Newest Post</a></li>
      </ul>
     <h3>Learn Enough <span>to Be Dangerous</span></h3>
 </footer>
